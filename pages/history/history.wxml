@@ -1,0 +1,11 @@
+<modal title="请求失败" class="modal" confirm-text="重新加载" bindconfirm="req" no-cancel hidden="{{isModalHidden}}"><view>重新加载数据</view></modal>
+<scroll-view scroll-y="true">
+    <view wx:for="{{lotterData}}" class="lotteryResults">
+        <view class="expect">第<text>{{item.expect}}</text>期</view>
+        <view class="openCodes">
+        <view wx:for="{{item.opencode}}" wx:for-index="idx"class="openCode {{idx==6 ? 'blue':'red' }}">{{item}}</view>
+        </view>
+        <view class="openTime">开奖日期:<text>{{item.opentime }}</text></view>
+        
+    </view>
+</scroll-view>

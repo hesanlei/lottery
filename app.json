@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/history/history"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "双色球",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color":"#272636",
+    "selectedColor":"#eb4f38",
+    "borderStyle": "white",
+    "backgroundColor": "#fafafa",
+    "list":[{
+      "pagePath":"pages/index/index",
+      "text":"最新",
+      "iconPath":"image/index.png",
+      "selectedIconPath":"image/indexHL.png"
+    },{
+      "pagePath":"pages/history/history",
+      "text":"历史",
+      "iconPath":"image/history.png",
+      "selectedIconPath":"image/historyHL.png"
+    }
+
+    ]
+    
+  }
+  
+}

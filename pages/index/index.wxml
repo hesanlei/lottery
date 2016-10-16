@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<modal title="请求失败" class="modal" confirm-text="重新加载" bindconfirm="getNewLottery" no-cancel hidden="{{isModalHidden}}"><view>重新加载数据</view></modal>
+<view class="container">
+    <view class="newLottery" wx:for="{{lotterData}}">
+            <view class="expect">第<text>{{item.expect}}</text>期</view>
+            <view class="openCodes">
+                <view wx:for="{{item.opencode}}" wx:for-index="idx" class="openCode {{idx==6 ? 'blue':'red' }}">{{item}}</view>  
+            </view>
+            <view class="openTime">开奖日期:<text>{{item.opentime}}</text></view>
+    </view>
+    <view class="countDown">
+        <text class="countDown-title">距离下期开奖</text>
+        <text class="countDown-time">{{time.hour}}小时{{time.minute}}分{{time.second}}秒</text>
+        <canvas canvas-id="1"></canvas>
+    </view>
+</view>

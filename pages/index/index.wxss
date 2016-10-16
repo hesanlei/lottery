@@ -1,0 +1,62 @@
+/**index.wxss**/
+.newLottery{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-between;
+  background: white;
+  margin: 20px 0;
+  height: 470px;
+  width: 90%;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.openCodes{
+  display: flex;
+  flex-direction: row;
+}
+.openTime{
+    color: darkgrey;
+    font-size: 10px;
+    align-self: flex-end;
+}
+.openTime text{
+    margin-left: 8px
+}
+.expect{
+    font-weight: bold;
+    font-size: 14px;
+    color: darkgrey; 
+}
+.expect text{
+    margin: 0px 8px;
+    color:red;
+    font-size: 16px;
+}
+.openCode{
+    text-align: center;
+    margin:0px 5px ;
+    width: 30px;
+    height: 30px;
+    line-height: 34px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50%;
+    box-shadow: 6px 5px 3px #888888
+}
+.countDown{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+    padding-top: 170px;
+}
+.countDown-title{
+    padding: 30px 0;
+}
+.countDown-time{
+    padding-bottom: 50px;
+}
+

@@ -1,0 +1,22 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding:20px 0;
+  box-sizing: border-box;
+} 
+page {
+  background-color: #fbf9fe;
+  height: 100%;
+}
+.red{
+    /*background: red;*/
+     background:-webkit-gradient(linear, 0% 100%, 0% 0%,from(#fc0301), to(#fc6c6b));
+}
+.blue{
+    /*background: #0001fb;*/
+    background:-webkit-gradient(linear, 0% 100%, 0% 0%,from(#0001fb), to(#918ef7));
+}
